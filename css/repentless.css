@@ -376,12 +376,12 @@ a {
   padding: 0 0.4em;
   text-transform: uppercase;
 }
-
+/*
 .opener {
   background: #0c0c0a url("../img/opener-bg.jpg") repeat;
   background-size: cover;
   color: #d8d3d2;
-}
+}*/
 .opener .role {
   color: #9d9d9d;
 }
@@ -413,8 +413,7 @@ a {
   background-image: url("../img/opener-blip.jpg"), url("../img/opener-town.png");
   background-size: 0, cover;
   opacity: 0.8;
-}
-.opener .copy {
+} .opener .copy {
   -webkit-animation: opener-copy 13s infinite ease alternate;
   animation: opener-copy 13s infinite ease alternate;
   top: 20%;
@@ -528,12 +527,12 @@ a {
     transform: translateX(-350px);
   }
 }
-
+/*
 .director {
   background: #dededd url("../img/director-bg.jpg") no-repeat;
   background-size: cover;
   color: #626963;
-}
+}*/
 .director .role {
   color: #3a3a3a;
 }
@@ -686,16 +685,16 @@ a {
     transform: translateX(-4%) scale(1.2) skewX(3deg);
   }
 }
-
+/*
 .bumper-01 {
   background: #0e0b06 url("../img/bumper-01-bg.png") repeat;
   background-size: cover;
-}
+}*/
 .bumper-01 .composition {
   -webkit-animation: bumper-01-comp 21s 16s infinite ease alternate;
   animation: bumper-01-comp 21s 16s infinite ease alternate;
-  -webkit-mask: url("../img/bumper-01-human.png") top left/cover no-repeat;
-  mask: url("../img/bumper-01-human.png") top left/cover no-repeat;
+  -webkit-mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
+  mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
 }
 .bumper-01 .composition,
 .bumper-01 .human,
@@ -706,10 +705,10 @@ a {
   width: 100%;
 }
 .bumper-01 .human {
-  background: transparent url("../img/bumper-01-human.png") no-repeat;
+  background: transparent url("../img/paul-bostaph.png") no-repeat;
   opacity: 0.8;
   background-size: cover;
-}
+}/*
 .bumper-01 .crud {
   -webkit-animation: bumper-01-crud 28s 16s infinite ease alternate;
   animation: bumper-01-crud 28s 16s infinite ease alternate;
@@ -719,7 +718,7 @@ a {
   -webkit-transform: translateX(200px);
   transform: translateX(200px);
 }
-
+*/
 @-webkit-keyframes bumper-01-comp {
   100% {
     -webkit-transform: scale(1.1) translateX(-40px);
@@ -779,11 +778,11 @@ a {
   height: 100%;
   position: absolute;
   width: 100%;
-}
+}/*
 .photography .composition {
   -webkit-mask: url("../img/photography-mask.png") top left/cover no-repeat;
   mask: url("../img/photography-mask.png") top left/cover no-repeat;
-}
+}*/
 .photography .human {
   -webkit-animation: photography-human 18s 19s infinite linear alternate;
   animation: photography-human 18s 19s infinite linear alternate;
