@@ -48,10 +48,10 @@ mark {
 html, body, .titles {
   height: 100%;
 }
-
+/*
 html, body {
   background-color: #dededd;
-}
+}*/
 
 a {
   display: inline-block;
@@ -72,11 +72,11 @@ a {
 .first-play .titles {
   visibility: hidden;
 }
-.first-play [role="contentinfo"] {
+.first-play .content {
   display: block;
 }
 
-[role="contentinfo"] {
+.content {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #626963;
@@ -86,44 +86,45 @@ a {
   position: absolute;
   width: 100%;
 }
-[role="contentinfo"] a {
+.content] a {
   text-decoration: underline;
 }
-[role="contentinfo"] header {
+.content header {
   color: #000;
   margin-bottom: 2em;
   text-align: center;
 }
-[role="contentinfo"] h1 {
+.content h1 {
   font-size: 2.8em;
   font-weight: 100;
   margin-bottom: 0.2em;
 }
-[role="contentinfo"] h2 {
+.content h2 {
   font-size: 1.4em;
   font-weight: 300;
 }
-[role="contentinfo"] p {
+.content p {
   line-height: 1.2;
   margin: 0 auto;
   max-width: 650px;
   padding-bottom: 1.2em;
 }
-[role="contentinfo"] .big-play-btn {
+.content .big-play-btn {
   border-color: rgba(31, 31, 31, 0.8);
   color: #000;
   display: block;
   font-size: 1.6em;
   margin: 0 auto;
 }
-[role="contentinfo"] .big-play-btn:hover, [role="contentinfo"] .big-play-btn:focus {
+.content .big-play-btn:hover,
+.content .big-play-btn:focus {
   border-color: #000;
 }
-[role="contentinfo"] .big-btn-container {
+.content .big-btn-container {
   margin-top: 0.8em;
   text-align: center;
 }
-[role="contentinfo"] .big-btn-container i {
+.content .big-btn-container i {
   font-size: 0.8em;
 }
 
