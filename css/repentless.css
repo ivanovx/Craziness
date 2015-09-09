@@ -1,7 +1,7 @@
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, em, img,
 small, strong, b, i, ol, ul, li, article, aside,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, section,
 time, mark {
   margin: 0;
@@ -93,7 +93,7 @@ a {
   position: absolute;
   width: 100%;
 }
-.content] a {
+.content a {
   text-decoration: underline;
 }
 .content header {
@@ -274,7 +274,7 @@ a {
     transform: translateX(0);
   }
 }
-
+/*
 .copy {
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
   font-size: 1.3em;
@@ -284,7 +284,7 @@ a {
   text-transform: uppercase;
   -webkit-text-size-adjust: none;
   z-index: 90;
-}
+}*/
 
 .composition {
   overflow: hidden;
@@ -292,20 +292,20 @@ a {
   height: 100%;
   width: 100%;
 }
-
+/*
 .role {
   display: block;
   font-family: georgia, times, serif;
   font-size: 0.85rem;
   font-weight: 500;
   margin-bottom: 0.5em;
-}
-
+}*/
+/*
 @media screen and (min-width: 520px) {
   .copy {
     font-size: 2em;
   }
-}
+}*/
 .opener {
   -webkit-animation: opener 36.54s infinite;
   animation: opener 36.54s infinite;
@@ -368,7 +368,7 @@ a {
   border-color: #fff;
   outline: none;
 }
-
+/*
 .project-crud {
   color: #d8d3d2;
   display: inline-block;
@@ -383,16 +383,17 @@ a {
   font-size: 0.8rem;
   padding: 0 0.4em;
   text-transform: uppercase;
-}
+}*/
 /*
 .opener {
   background: #0c0c0a url("../img/opener-bg.jpg") repeat;
   background-size: cover;
   color: #d8d3d2;
 }*/
+/*
 .opener .role {
   color: #9d9d9d;
-}
+}*/
 .opener .composition {
   -webkit-animation: opener-comp 13s infinite ease alternate;
   animation: opener-comp 13s infinite ease alternate;
@@ -401,8 +402,9 @@ a {
   -webkit-mask: url("../img/tom-araya.png") top left/cover no-repeat;
   mask: url("../img/tom-araya.png") top left/cover no-repeat;
 }
-.opener .human,
-.opener .town {
+.opener .human
+/*,
+.opener .town */{
   left: 0;
   position: absolute;
   height: 100%;
@@ -412,7 +414,7 @@ a {
   background: transparent url("../img/tom-araya.png") no-repeat;
   opacity: 0.9;
   background-size: cover;
-}
+}/*
 .opener .town {
   -webkit-animation: opener-town 11s infinite linear alternate;
   animation: opener-town 11s infinite linear alternate;
@@ -421,7 +423,7 @@ a {
   background-image: url("../img/opener-blip.jpg"), url("../img/opener-town.png");
   background-size: 0, cover;
   opacity: 0.8;
-} .opener .copy {
+}*//* .opener .copy {
   -webkit-animation: opener-copy 13s infinite ease alternate;
   animation: opener-copy 13s infinite ease alternate;
   top: 20%;
@@ -429,7 +431,7 @@ a {
   transform: translateX(29%) scale(0.9);
   width: 100%;
 }
-
+*/
 @-webkit-keyframes opener-copy {
   0%, 100% {
     opacity: 0;
@@ -540,29 +542,30 @@ a {
   background: #dededd url("../img/director-bg.jpg") no-repeat;
   background-size: cover;
   color: #626963;
-}*/
+}*//*
 .director .role {
   color: #3a3a3a;
-}
+}*/
 .director a {
   color: #626963;
 }
 .director a:hover {
   color: #aa250f;
-}
+}/*
 .director .copy {
   -webkit-animation: director-copy 17s 8s infinite linear alternate;
   animation: director-copy 17s 8s infinite linear alternate;
   left: 60vw;
   top: 48%;
   width: 100%;
-}
+}*/
+/*
 @media screen and (min-width: 1200px) {
   .director .copy {
     left: 50vw;
     top: 45%;
   }
-}
+}*/
 .director .composition {
   -webkit-animation: director-comp 17s 8s infinite linear alternate;
   animation: director-comp 17s 8s infinite linear alternate;
@@ -570,9 +573,10 @@ a {
   mask: url("../img/kerry-king.png") top left/cover no-repeat;
   max-width: 1100px;
 }
-.director .human,
+.director .human
+/*,
 .director .trees,
-.director .street {
+.director .street */ {
   height: 100%;
   right: 0;
   position: absolute;
@@ -583,10 +587,12 @@ a {
   background: transparent url("../img/kerry-king.png") no-repeat;
   background-size: cover;
 }
+/*
 .director .street,
 .director .trees {
   background-size: cover;
-}
+*/
+/*
 .director .street {
   -webkit-animation: director-street 18s 8s infinite linear alternate;
   animation: director-street 18s 8s infinite linear alternate;
@@ -610,7 +616,7 @@ a {
   position: absolute;
   width: 150%;
 }
-
+*/
 @-webkit-keyframes director-copy {
   100% {
     -webkit-transform: translate(10%, 50%) scale(1.2);
@@ -706,8 +712,9 @@ a {
   mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
 }
 .bumper-01 .composition,
-.bumper-01 .human,
-.bumper-01 .crud {
+.bumper-01 .human /*,
+.bumper-01 .crud */
+{
   left: 0;
   position: absolute;
   height: 100%;
@@ -760,23 +767,23 @@ a {
   background-color: #07060c;
   background-size: cover;
   color: #d8d3d2;
-}
+}/*
 .photography .role {
   color: #9d9d9d;
-}
+}*/
 .photography a {
   color: #d8d3d2;
 }
 .photography a:hover {
   color: #ebd305;
-}
+}/*
 .photography .copy {
   -webkit-animation: photography-copy 18s 19s infinite linear alternate;
   animation: photography-copy 18s 19s infinite linear alternate;
   right: 46vw;
   top: 65vh;
   text-align: right;
-}
+}*/
 .photography .background {
   background: #07060c url("../img/photography-bg.jpg") no-repeat;
   background-size: cover;
@@ -838,21 +845,21 @@ a {
 .twitter a:hover, .twitter a:focus {
   color: #d578ba;
   outline: none;
-}
+}/*
 .twitter .copy {
   -webkit-animation: twitter-copy 14s 23s infinite linear alternate;
   animation: twitter-copy 14s 23s infinite linear alternate;
   opacity: 0;
   text-align: center;
   top: 40vh;
-}
-.twitter .sky,
+}*/
+/*.twitter .sky,*/
 .twitter .clouds,
 .twitter .ground {
   height: 100%;
   position: absolute;
   width: 100%;
-}
+}/*
 .twitter .sky {
   -webkit-animation: twitter-sky 16s 23s infinite linear alternate;
   animation: twitter-sky 16s 23s infinite linear alternate;
@@ -860,7 +867,7 @@ a {
   background-size: cover;
   max-height: 450px;
 }
-
+*/
 
 .twitter .clouds {
   -webkit-animation: twitter-clouds 18s 23s infinite linear alternate;
@@ -879,9 +886,9 @@ a {
   max-height: 425px;
 }
 @media screen and (min-width: 1100px) {
-  .twitter .sky {
+  /*.twitter .sky {
     max-height: 600px;
-  }
+  }*/
   .twitter .ground {
     bottom: -120px;
     max-height: 575px;
