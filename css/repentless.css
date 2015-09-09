@@ -48,10 +48,17 @@ mark {
 html, body, .titles {
   height: 100%;
 }
-/*
+
 html, body {
-  background-color: #dededd;
-}*/
+  /*background-color: #dededd; */
+
+  background-image: url("../img/twitter-clouds.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  width: 100%;
+  height: auto;
+
+}
 
 a {
   display: inline-block;
@@ -62,7 +69,7 @@ a {
   visibility: visible;
 }
 
-.title-card {
+.stage {
   height: 100%;
   overflow: hidden;
   position: absolute;
@@ -325,7 +332,7 @@ a {
 }
 
 .paused .animated,
-.paused .title-card .animated {
+.paused .stage .animated {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
@@ -403,7 +410,7 @@ a {
 }
 .opener .human {
   background: transparent url("../img/tom-araya.png") no-repeat;
-  opacity: 0.8;
+  opacity: 0.9;
   background-size: cover;
 }
 .opener .town {
@@ -572,6 +579,7 @@ a {
   width: 100%;
 }
 .director .human {
+  opacity: 0.9;
   background: transparent url("../img/kerry-king.png") no-repeat;
   background-size: cover;
 }
@@ -707,7 +715,7 @@ a {
 }
 .bumper-01 .human {
   background: transparent url("../img/paul-bostaph.png") no-repeat;
-  opacity: 0.8;
+  opacity: 0.9;
   background-size: cover;
 }/*
 .bumper-01 .crud {
