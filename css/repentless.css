@@ -112,7 +112,7 @@ a {
   height: 100%;
   width: 100%;
 }
-@-webkit-keyframes opener {
+@-webkit-keyframes araya {
   0%,
   22.9% {
     opacity: 1;
@@ -126,7 +126,7 @@ a {
     transform: translateX(-100%);
   }
 }
-@keyframes opener {
+@keyframes araya {
   0%,
   22.9% {
     opacity: 1;
@@ -140,35 +140,39 @@ a {
     transform: translateX(-100%);
   }
 }
+/*
+
 @-webkit-keyframes opener-copy {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0;
   }
-  4%,
-  96% {
+
+  4%, 96% {
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateX(48%) scale(1.06);
     transform: translateX(48%) scale(1.06);
   }
 }
+
 @keyframes opener-copy {
-  0%,
-  100% {
+  0%, 100% {
     opacity: 0;
   }
-  4%,
-  96% {
+
+  4%, 96% {
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateX(48%) scale(1.06);
     transform: translateX(48%) scale(1.06);
   }
 }
-@-webkit-keyframes opener-comp {
+*/
+@-webkit-keyframes araya-comp {
   40% {
     opacity: 1;
   }
@@ -187,7 +191,7 @@ a {
     transform: translateX(7%) scale(1.08) skewY(2deg);
   }
 }
-@keyframes opener-comp {
+@keyframes araya-comp {
   40% {
     opacity: 1;
   }
@@ -206,40 +210,45 @@ a {
     transform: translateX(7%) scale(1.08) skewY(2deg);
   }
 }
+/*
 @-webkit-keyframes opener-town {
-  0%,
-  40%,
-  41% {
+  0%, 40%, 41% {
     background-size: 0, cover;
   }
+
   40.1% {
     background-size: 120%, cover;
   }
+
   50% {
     opacity: 0.6;
   }
+
   100% {
     -webkit-transform: translateX(-350px);
     transform: translateX(-350px);
   }
 }
+
 @keyframes opener-town {
-  0%,
-  40%,
-  41% {
+  0%, 40%, 41% {
     background-size: 0, cover;
   }
+
   40.1% {
     background-size: 120%, cover;
   }
+
   50% {
     opacity: 0.6;
   }
+
   100% {
     -webkit-transform: translateX(-350px);
     transform: translateX(-350px);
   }
 }
+*/
 @-webkit-keyframes director {
   0%,
   22.9%,
@@ -559,12 +568,12 @@ a {
   }
 }
 .araya {
-  -webkit-animation: opener 36.54s infinite;
-  animation: opener 36.54s infinite;
+  -webkit-animation: araya 36.54s infinite;
+  animation: araya 36.54s infinite;
 }
 .araya .composition {
-  -webkit-animation: opener-comp 13s infinite ease alternate;
-  animation: opener-comp 13s infinite ease alternate;
+  -webkit-animation: araya-comp 13s infinite ease alternate;
+  animation: araya-comp 13s infinite ease alternate;
   -webkit-transform: translateX(-4%) scale(1.02);
   transform: translateX(-4%) scale(1.02);
   -webkit-mask: url("../img/tom-araya.png") top left / cover no-repeat;
@@ -655,7 +664,7 @@ a {
   animation: photography-human 18s 19s infinite linear alternate;
   background: transparent url("../img/gary-holt.png") no-repeat;
   background-size: cover;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 .twitter {
   -webkit-animation: twitter 36.54s infinite;
