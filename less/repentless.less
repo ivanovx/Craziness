@@ -6,11 +6,6 @@
 @import "members/bostaph";
 @import "members/holt";
 
-.twitter {
-  -webkit-animation: twitter 36.54s infinite;
-  animation: twitter 36.54s infinite;
-}
-
 .paused .animated,
 .paused .stage .animated {
   -webkit-animation-play-state: paused;
@@ -49,153 +44,35 @@
   outline: none;
 }
 
-/*
-.opener {
-  background: #0c0c0a url("../img/opener-bg.jpg") repeat;
-  background-size: cover;
-  color: #d8d3d2;
-}*/
-/*
-.opener .role {
-  color: #9d9d9d;
-}*/
-/*
-.opener .town {
-  -webkit-animation: opener-town 11s infinite linear alternate;
-  animation: opener-town 11s infinite linear alternate;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-image: url("../img/opener-blip.jpg"), url("../img/opener-town.png");
-  background-size: 0, cover;
-  opacity: 0.8;
-}*//* .opener .copy {
-  -webkit-animation: opener-copy 13s infinite ease alternate;
-  animation: opener-copy 13s infinite ease alternate;
-  top: 20%;
-  -webkit-transform: translateX(29%) scale(0.9);
-  transform: translateX(29%) scale(0.9);
-  width: 100%;
-}
-*/
-/*
-.director {
-  background: #dededd url("../img/director-bg.jpg") no-repeat;
-  background-size: cover;
-  color: #626963;
-}*//*
-.director .role {
-  color: #3a3a3a;
-}*/
-/*
-.director .copy {
-  -webkit-animation: director-copy 17s 8s infinite linear alternate;
-  animation: director-copy 17s 8s infinite linear alternate;
-  left: 60vw;
-  top: 48%;
-  width: 100%;
-}*/
-/*
-@media screen and (min-width: 1200px) {
-  .director .copy {
-    left: 50vw;
-    top: 45%;
-  }
-}*/
 
-/*
-.director .street,
-.director .trees {
-  background-size: cover;
-*/
-/*
-.director .street {
-  -webkit-animation: director-street 18s 8s infinite linear alternate;
-  animation: director-street 18s 8s infinite linear alternate;
-  background: transparent url("../img/director-street.png") no-repeat -175px 0;
-  opacity: 0.7;
+.twitter {
+  -webkit-animation: twitter 36.54s infinite;
+  animation: twitter 36.54s infinite;
 }
-.director .trees {
-  -webkit-animation: director-trees 18s 8s infinite linear alternate;
-  animation: director-trees 18s 8s infinite linear alternate;
-  background: transparent url("../img/director-trees.png") no-repeat;
-  opacity: 0.75;
-}
-.director .trees::before {
-  -webkit-animation: director-blip 9s 8s infinite linear;
-  animation: director-blip 9s 8s infinite linear;
-  background: transparent url("../img/director-blip.png") no-repeat 0 -100px;
-  content: "";
-  display: block;
-  height: 150%;
-  opacity: 0;
-  position: absolute;
-  width: 150%;
-}
-*/
-/*
-.bumper-01 {
-  background: #0e0b06 url("../img/bumper-01-bg.png") repeat;
-  background-size: cover;
-}*/
-/*
-.bumper-01 .crud {
-  -webkit-animation: bumper-01-crud 28s 16s infinite ease alternate;
-  animation: bumper-01-crud 28s 16s infinite ease alternate;
-  background: transparent url("../img/bumper-01-crud.png") no-repeat;
-  background-size: cover;
-  opacity: 0.45;
-  -webkit-transform: translateX(200px);
-  transform: translateX(200px);
-}
-*/
-/*
-.photography .copy {
-  -webkit-animation: photography-copy 18s 19s infinite linear alternate;
-  animation: photography-copy 18s 19s infinite linear alternate;
-  right: 46vw;
-  top: 65vh;
-  text-align: right;
-}*/
-
 
 .twitter {
   background-color: #d7d7da;
   color: #8a8989;
 }
+/*
 .twitter a {
   color: #616d59;
 }
 .twitter a:hover, .twitter a:focus {
   color: #d578ba;
   outline: none;
-}/*
-.twitter .copy {
-  -webkit-animation: twitter-copy 14s 23s infinite linear alternate;
-  animation: twitter-copy 14s 23s infinite linear alternate;
-  opacity: 0;
-  text-align: center;
-  top: 40vh;
 }*/
-/*.twitter .sky,*/
 .twitter .clouds,
 .twitter .ground {
   height: 100%;
   position: absolute;
   width: 100%;
-}/*
-.twitter .sky {
-  -webkit-animation: twitter-sky 16s 23s infinite linear alternate;
-  animation: twitter-sky 16s 23s infinite linear alternate;
-  background: transparent url("../img/twitter-sky.png") no-repeat center top;
-  background-size: cover;
-  max-height: 450px;
 }
-*/
 
 .twitter .clouds {
   -webkit-animation: twitter-clouds 18s 23s infinite linear alternate;
   animation: twitter-clouds 18s 23s infinite linear alternate;
-  background: transparent url("../img/twitter-clouds.png") no-repeat center top;
+  background: transparent url("../img/repentless.png") no-repeat center top;
   background-size: 100%;
   opacity: 0.25;
   width: 200%;
@@ -203,15 +80,12 @@
 .twitter .ground {
   -webkit-animation: twitter-ground 16s 23s infinite linear alternate;
   animation: twitter-ground 16s 23s infinite linear alternate;
-  background: transparent url("../img/twitter-ground.png") no-repeat center bottom;
+  background: transparent url("../img/band.png") no-repeat center bottom;
   background-size: cover;
   bottom: 0;
   max-height: 425px;
 }
 @media screen and (min-width: 1100px) {
-  /*.twitter .sky {
-    max-height: 600px;
-  }*/
   .twitter .ground {
     bottom: -120px;
     max-height: 575px;

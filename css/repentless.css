@@ -81,7 +81,7 @@ body,
 }
 html,
 body {
-  background-image: url("../img/twitter-clouds.png");
+  background-image: url("../img/repentless.png");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
@@ -91,7 +91,7 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-.titles {
+.repentless {
   visibility: visible;
 }
 .stage {
@@ -100,7 +100,7 @@ a {
   position: absolute;
   width: 100%;
 }
-.first-play .titles {
+.first-play .repentless {
   visibility: hidden;
 }
 .first-play .content {
@@ -505,12 +505,6 @@ a {
 .holt {
   background-size: cover;
 }
-/*
-.holt .background {
-  //background: transparent url("../img/gary-holt.png") no-repeat;
-  background-size: cover;
-}*/
-/*.holt .background,*/
 .holt .composition,
 .holt .human {
   height: 100%;
