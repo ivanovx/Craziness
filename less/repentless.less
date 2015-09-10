@@ -1,24 +1,9 @@
 @import "normailize";
 @import "layout";
 @import "keyframes";
-
-.titles {
-  visibility: visible;
-}
-
-.stage {
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-
-.first-play .titles {
-  visibility: hidden;
-}
-.first-play .content {
-  display: block;
-}
+@import "members/araya";
+@import "members/king";
+@import "members/bostaph";
 /*
 .content {
   -moz-box-sizing: border-box;
@@ -85,12 +70,7 @@
   z-index: 90;
 }*/
 
-.composition {
-  overflow: hidden;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+
 /*
 .role {
   display: block;
@@ -105,20 +85,9 @@
     font-size: 2em;
   }
 }*/
-.araya {
-  -webkit-animation: opener 36.54s infinite;
-  animation: opener 36.54s infinite;
-}
 
-.director {
-  -webkit-animation: director 36.54s infinite;
-  animation: director 36.54s infinite;
-}
 
-.bumper-01 {
-  -webkit-animation: bumper01 36.54s infinite;
-  animation: bumper01 36.54s infinite;
-}
+
 
 .photography {
   -webkit-animation: photography 36.54s infinite;
@@ -193,25 +162,7 @@
 .opener .role {
   color: #9d9d9d;
 }*/
-.araya .composition {
-  -webkit-animation: opener-comp 13s infinite ease alternate;
-  animation: opener-comp 13s infinite ease alternate;
-  -webkit-transform: translateX(-4%) scale(1.02);
-  transform: translateX(-4%) scale(1.02);
-  -webkit-mask: url("../img/tom-araya.png") top left/cover no-repeat;
-  mask: url("../img/tom-araya.png") top left/cover no-repeat;
-}
-.araya .human {
-  left: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.araya .human {
-  background: transparent url("../img/tom-araya.png") no-repeat;
-  opacity: 0.9;
-  background-size: cover;
-}/*
+/*
 .opener .town {
   -webkit-animation: opener-town 11s infinite linear alternate;
   animation: opener-town 11s infinite linear alternate;
@@ -238,12 +189,7 @@
 .director .role {
   color: #3a3a3a;
 }*/
-.director a {
-  color: #626963;
-}
-.director a:hover {
-  color: #aa250f;
-}/*
+/*
 .director .copy {
   -webkit-animation: director-copy 17s 8s infinite linear alternate;
   animation: director-copy 17s 8s infinite linear alternate;
@@ -258,33 +204,13 @@
     top: 45%;
   }
 }*/
-.director .composition {
-  -webkit-animation: director-comp 17s 8s infinite linear alternate;
-  animation: director-comp 17s 8s infinite linear alternate;
-  -webkit-mask: url("../img/kerry-king.png") top left/cover no-repeat;
-  mask: url("../img/kerry-king.png") top left/cover no-repeat;
-  max-width: 1100px;
-}
-.director .human
-/*,
-.director .trees,
-.director .street */ {
-  height: 100%;
-  right: 0;
-  position: absolute;
-  width: 100%;
-}
-.director .human {
-  opacity: 0.9;
-  background: transparent url("../img/kerry-king.png") no-repeat;
-  background-size: cover;
-}
+
 /*
 .director .street,
 .director .trees {
   background-size: cover;
 */
-
+/*
 .director .street {
   -webkit-animation: director-street 18s 8s infinite linear alternate;
   animation: director-street 18s 8s infinite linear alternate;
@@ -308,32 +234,13 @@
   position: absolute;
   width: 150%;
 }
-
+*/
 /*
 .bumper-01 {
   background: #0e0b06 url("../img/bumper-01-bg.png") repeat;
   background-size: cover;
 }*/
-.bumper-01 .composition {
-  -webkit-animation: bumper-01-comp 21s 16s infinite ease alternate;
-  animation: bumper-01-comp 21s 16s infinite ease alternate;
-  -webkit-mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
-  mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
-}
-.bumper-01 .composition,
-.bumper-01 .human /*,
-.bumper-01 .crud */
-{
-  left: 0;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-.bumper-01 .human {
-  background: transparent url("../img/paul-bostaph.png") no-repeat;
-  opacity: 0.9;
-  background-size: cover;
-}/*
+/*
 .bumper-01 .crud {
   -webkit-animation: bumper-01-crud 28s 16s infinite ease alternate;
   animation: bumper-01-crud 28s 16s infinite ease alternate;

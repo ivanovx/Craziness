@@ -1,0 +1,23 @@
+.bostaph {
+  -webkit-animation: bumper01 36.54s infinite;
+  animation: bumper01 36.54s infinite;
+}
+
+.bostaph .composition {
+  -webkit-animation: bumper-01-comp 21s 16s infinite ease alternate;
+  animation: bumper-01-comp 21s 16s infinite ease alternate;
+  -webkit-mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
+  mask: url("../img/paul-bostaph.png") top left/cover no-repeat;
+}
+.bostaph .composition,
+.bostaph .human {
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.bostaph .human {
+  background: transparent url("../img/paul-bostaph.png") no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+}

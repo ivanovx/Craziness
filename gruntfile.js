@@ -14,10 +14,10 @@ module.exports = function(grunt) {
             files: [
                 "less/*.less"
             ],
-            tasks: ['less']
+            tasks: ["less"]
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks("grunt-contrib-less");
+    grunt.loadNpmTasks("grunt-contrib-watch");
 };
