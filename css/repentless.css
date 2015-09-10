@@ -575,6 +575,7 @@ a {
   -webkit-animation: araya-comp 13s infinite ease alternate;
   animation: araya-comp 13s infinite ease alternate;
   -webkit-transform: translateX(-4%) scale(1.02);
+  -ms-transform: translateX(-4%) scale(1.02);
   transform: translateX(-4%) scale(1.02);
   -webkit-mask: url("../img/tom-araya.png") top left / cover no-repeat;
   mask: url("../img/tom-araya.png") top left / cover no-repeat;
