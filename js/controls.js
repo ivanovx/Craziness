@@ -47,7 +47,9 @@ function toggleVolume (e) {
 document.getElementById("play-toggle").addEventListener("click", togglePlay);
 document.getElementById("mute-toggle").addEventListener("click", toggleVolume);
 
+/*
 document.getElementById("big-play-btn").addEventListener("click", function (e) {
     e.preventDefault();
     document.getElementById("play-toggle").click();
 });
+   */
