@@ -11,10 +11,12 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            files: [
-                "less/*.less"
-            ],
-            tasks: ["less"]
+            less :{
+                files: [
+                    "*.less"
+                ],
+                tasks: ["less"]
+            }
         }
     });
 

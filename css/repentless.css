@@ -43,32 +43,6 @@ ol,
 ul {
   list-style: none;
 }
-/*
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-i, em, mark {
-  font-style: italic;
-}
-
-h1, h2, h3, h4, h5, h6,
-b, strong, mark {
-  font-weight: 600;
-}
-
-mark {
-  background-color: transparent;
-  color: inherit;
-}
-*/
 html,
 body,
 .titles {
@@ -82,12 +56,6 @@ body {
   width: 100%;
   height: auto;
 }
-/*
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-*/
 .repentless {
   visibility: visible;
 }
@@ -100,11 +68,6 @@ a {
 .first-play .repentless {
   visibility: hidden;
 }
-/*
-.first-play .content {
-  display: block;
-}
-*/
 .composition {
   overflow: hidden;
   position: absolute;
@@ -351,50 +314,55 @@ a {
     transform: scale(1.5) translateX(-80px);
   }
 }
-@keyframes twitter-copy {
-  15% {
-    opacity: 0.2;
+@keyframes final {
+  0%,
+  70.9%,
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
-  25% {
+  71%,
+  99.9% {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
+}
+@-webkit-keyframes final {
+  0%,
+  70.9%,
   100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  71%,
+  99.9% {
     opacity: 1;
-    -webkit-transform: translateY(-30px) scale(1.05);
-    transform: translateY(-30px) scale(1.05);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
-@-webkit-keyframes twitter-sky {
-  100% {
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
-  }
-}
-@keyframes twitter-sky {
-  100% {
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
-  }
-}
-@-webkit-keyframes twitter-clouds {
+@-webkit-keyframes cover {
   100% {
     -webkit-transform: translate(-150px, -25px);
     transform: translate(-150px, -25px);
   }
 }
-@keyframes twitter-clouds {
+@keyframes cover {
   100% {
     -webkit-transform: translate(-150px, -25px);
     transform: translate(-150px, -25px);
   }
 }
-@-webkit-keyframes twitter-ground {
+@-webkit-keyframes band {
   100% {
     -webkit-transform: translateY(45px) scale(1.05);
     transform: translateY(45px) scale(1.05);
   }
 }
-@keyframes twitter-ground {
+@keyframes band {
   100% {
     -webkit-transform: translateY(45px) scale(1.05);
     transform: translateY(45px) scale(1.05);
@@ -420,15 +388,13 @@ a {
   -webkit-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 1px solid rgba(241, 241, 241, 0.5);
-  border-radius: 25px;
+  border: none;
   color: #fff;
   cursor: pointer;
   font-family: "Helvetica Neue", helvetica, arial, sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   font-weight: 100;
-  letter-spacing: 0.07em;
-  padding: 0.2em 0.6em 0.1em 0.6em;
+  letter-spacing: 0.5em;
   text-transform: uppercase;
 }
 .btn:hover,
@@ -454,11 +420,9 @@ a {
   position: absolute;
   height: 100%;
   width: 100%;
-}
-.araya .human {
   background: transparent url("../img/tom-araya.png") no-repeat;
-  opacity: 0.9;
   background-size: cover;
+  opacity: 0.9;
 }
 .king {
   -webkit-animation: king 36.54s infinite;
@@ -472,10 +436,10 @@ a {
   max-width: 1100px;
 }
 .king .human {
+  width: 100%;
   height: 100%;
   right: 0;
   position: absolute;
-  width: 100%;
 }
 .king .human {
   opacity: 0.9;
@@ -486,12 +450,6 @@ a {
   -webkit-animation: bostaph 36.54s infinite;
   animation: bostaph 36.54s infinite;
 }
-.bostaph .composition {
-  -webkit-animation: bostaph-comp 21s 16s infinite ease alternate;
-  animation: bostaph-comp 21s 16s infinite ease alternate;
-  -webkit-mask: url("../img/paul-bostaph.png") top left / cover no-repeat;
-  mask: url("../img/paul-bostaph.png") top left / cover no-repeat;
-}
 .bostaph .composition,
 .bostaph .human {
   left: 0;
@@ -499,23 +457,26 @@ a {
   height: 100%;
   width: 100%;
 }
+.bostaph .composition {
+  -webkit-animation: bostaph-comp 21s 16s infinite ease alternate;
+  animation: bostaph-comp 21s 16s infinite ease alternate;
+  -webkit-mask: url("../img/paul-bostaph.png") top left / cover no-repeat;
+  mask: url("../img/paul-bostaph.png") top left / cover no-repeat;
+}
 .bostaph .human {
   background: transparent url("../img/paul-bostaph.png") no-repeat;
-  opacity: 0.9;
   background-size: cover;
+  opacity: 0.9;
 }
 .holt {
   -webkit-animation: photography 36.54s infinite;
   animation: photography 36.54s infinite;
 }
-.holt {
-  background-size: cover;
-}
 .holt .composition,
 .holt .human {
+  width: 100%;
   height: 100%;
   position: absolute;
-  width: 100%;
 }
 .holt .human {
   -webkit-animation: photography-human 18s 19s infinite linear alternate;
@@ -525,37 +486,28 @@ a {
   opacity: 0.9;
 }
 .final {
-  background-color: #d7d7da;
-  color: #8a8989;
-  -webkit-animation: twitter 36.54s infinite;
-  animation: twitter 36.54s infinite;
+  -webkit-animation: final 36.54s infinite;
+  animation: final 36.54s infinite;
 }
 .final .cover,
 .final .band {
+  width: 100%;
   height: 100%;
   position: absolute;
-  width: 100%;
 }
 .final .cover {
-  -webkit-animation: twitter-clouds 18s 23s infinite linear alternate;
-  animation: twitter-clouds 18s 23s infinite linear alternate;
+  -webkit-animation: cover 18s 23s infinite linear alternate;
+  animation: cover 18s 23s infinite linear alternate;
   background: transparent url("../img/repentless.png") no-repeat center top;
   background-size: 100%;
   opacity: 0.25;
   width: 200%;
 }
 .final .band {
-  -webkit-animation: twitter-ground 16s 23s infinite linear alternate;
-  animation: twitter-ground 16s 23s infinite linear alternate;
+  -webkit-animation: band 16s 23s infinite linear alternate;
+  animation: band 16s 23s infinite linear alternate;
   background: transparent url("../img/band.png") no-repeat center bottom;
   background-size: cover;
   bottom: 0;
   max-height: 425px;
 }
-/*
-@media screen and (min-width: 1100px) {
-  .final .ground {
-    bottom: -120px;
-    max-height: 575px;
-  }
-}*/

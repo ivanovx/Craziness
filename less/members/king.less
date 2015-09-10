@@ -1,23 +1,25 @@
 .king {
   -webkit-animation: king 36.54s infinite;
   animation: king 36.54s infinite;
-}
 
-.king .composition {
-  -webkit-animation: king-comp 17s 8s infinite linear alternate;
-  animation: king-comp 17s 8s infinite linear alternate;
-  -webkit-mask: url("../img/kerry-king.png") top left/cover no-repeat;
-  mask: url("../img/kerry-king.png") top left/cover no-repeat;
-  max-width: 1100px;
-}
-.king .human {
-  height: 100%;
-  right: 0;
-  position: absolute;
-  width: 100%;
-}
-.king .human {
-  opacity: 0.9;
-  background: transparent url("../img/kerry-king.png") no-repeat;
-  background-size: cover;
+  .composition {
+    -webkit-animation: king-comp 17s 8s infinite linear alternate;
+    animation: king-comp 17s 8s infinite linear alternate;
+    -webkit-mask: url("../img/kerry-king.png") top left/cover no-repeat;
+    mask: url("../img/kerry-king.png") top left/cover no-repeat;
+    max-width: 1100px;
+  }
+
+  .human {
+    width: 100%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+  }
+
+  .human {
+    opacity: 0.9;
+    background: transparent url("../img/kerry-king.png") no-repeat;
+    background-size: cover;
+  }
 }

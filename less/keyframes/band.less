@@ -1,55 +1,53 @@
-@keyframes twitter-copy {
-  15% {
-    opacity: 0.2;
+@keyframes final {
+  0%, 70.9%, 100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
-  25% {
+  71%, 99.9% {
     opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes final {
+  0%, 70.9%, 100% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 
-  100% {
+  71%, 99.9% {
     opacity: 1;
-    -webkit-transform: translateY(-30px) scale(1.05);
-    transform: translateY(-30px) scale(1.05);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
-@-webkit-keyframes twitter-sky {
-  100% {
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
-  }
-}
-
-@keyframes twitter-sky {
-  100% {
-    -webkit-transform: translateY(-25px);
-    transform: translateY(-25px);
-  }
-}
-
-@-webkit-keyframes twitter-clouds {
+@-webkit-keyframes cover {
   100% {
     -webkit-transform: translate(-150px, -25px);
     transform: translate(-150px, -25px);
   }
 }
 
-@keyframes twitter-clouds {
+@keyframes cover {
   100% {
     -webkit-transform: translate(-150px, -25px);
     transform: translate(-150px, -25px);
   }
 }
 
-@-webkit-keyframes twitter-ground {
+@-webkit-keyframes band {
   100% {
     -webkit-transform: translateY(45px) scale(1.05);
     transform: translateY(45px) scale(1.05);
   }
 }
 
-@keyframes twitter-ground {
+@keyframes band {
   100% {
     -webkit-transform: translateY(45px) scale(1.05);
     transform: translateY(45px) scale(1.05);
