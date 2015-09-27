@@ -1,7 +1,7 @@
 var body = document.body;
 var track = document.getElementById("audio-track");
 
-function delayPlayToggle (action) {
+function delayPlayToggle(action) {
     setTimeout(function () {
         if (action === "play") {
             track.play();
@@ -11,7 +11,7 @@ function delayPlayToggle (action) {
     }, 50);
 }
 
-function togglePlay (e) {
+function togglePlay(e) {
     var classPaused = "paused";
     var classPlaying = "playing";
     var isPaused = body.classList.contains(classPaused);
@@ -31,7 +31,7 @@ function togglePlay (e) {
     }
 }
 
-function toggleVolume (e) {
+function toggleVolume(e) {
     var muted = track.volume === 0;
     var target = e.target;
 

@@ -3,7 +3,8 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ["less"]
+                    paths: ["less"],
+					          compress: true
                 },
                 files: {
                     "css/repentless.css": "less/repentless.less"
@@ -13,7 +14,7 @@ module.exports = function(grunt) {
         watch: {
             less :{
                 files: [
-                    "*.less"
+                    "less/*.less"
                 ],
                 tasks: ["less"]
             }
