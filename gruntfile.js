@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 					          compress: true
                 },
                 files: {
-                    "css/repentless.css": "less/repentless.less"
+                    "css/craziness.css": "less/craziness.less"
                 }
             }
         },
