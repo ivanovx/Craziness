@@ -22,11 +22,11 @@ function togglePlay(e) {
     if (isPaused) {
         body.classList.remove("first-play");
         body.classList.remove(classPaused);
-        target.textContent = target.getAttribute("data-alt-text");
+        target.textContent = "pause";
         delayPlayToggle("play");
     } else {
         body.classList.add(classPaused);
-        target.textContent = target.getAttribute("data-text");
+        target.textContent = "play";
         delayPlayToggle("pause");
     }
 }
@@ -37,10 +37,10 @@ function toggleVolume(e) {
 
     if (muted) {
         track.volume = 1;
-        target.textContent = target.getAttribute("data-text");
+        target.textContent = "mute";
     } else {
         track.volume = 0;
-        target.textContent = target.getAttribute("data-alt-text");
+        target.textContent = "unmute";
     }
 }
 
