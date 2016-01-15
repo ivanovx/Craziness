@@ -1,51 +1,50 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <title>Craziness</title>
+		<title>Craziness</title>
 
-        <link rel="stylesheet" href="css/craziness.css" />
-    </head>
-    <body class="first-play paused">
-        <div class="controls">
-            <button id="play-toggle" class="btn play-toggle">play</button>
-            <button id="mute-toggle" class="btn mute-toggle">mute</button>
-        </div>
-        <ol class="craziness">
-            <li class="stage araya animated">
-                <div class="composition animated">
-                    <div class="human"></div>
-                </div>
-            </li>
-            <li class="stage king animated">
-                <div class="composition animated">
-                    <div class="human"></div>
-                </div>
-            </li>
-            <li class="stage bostaph animated">
-                <div class="composition animated">
-                    <div class="human"></div>
-                </div>
-            </li>
-            <li class="stage holt animated">
-                <div class="composition animated">
-                    <div class="human animated"></div>
-                </div>
-            </li>
-            <li class="stage final animated">
-                <div class="cover animated"></div>
-                <div class="band animated"></div>
-            </li>
-        </ol>
+		<link rel="stylesheet" href="css/craziness.css" />
+	</head>
+	<body class="first-play paused">
+		<div class="controls">
+			<button id="play-toggle" class="btn play-toggle">play</button>
+			<button id="mute-toggle" class="btn mute-toggle">mute</button>
+		</div>
+		<ol class="craziness">
+			<li class="stage araya animated">
+				<div class="composition animated">
+					<div class="human"></div>
+				</div>
+			</li>
+			<li class="stage king animated">
+				<div class="composition animated">
+					<div class="human"></div>
+				</div>
+			</li>
+			<li class="stage bostaph animated">
+				<div class="composition animated">
+					<div class="human"></div>
+				</div>
+			</li>
+			<li class="stage holt animated">
+				<div class="composition animated">
+					<div class="human animated"></div>
+				</div>
+			</li>
+			<li class="stage final animated">
+				<div class="cover animated"></div>
+				<div class="band animated"></div>
+			</li>
+		</ol>
 
-        <audio id="audio-track" preload="auto" loop>
-           <source src="audio/repentless.ogg">
-           <source src="audio/repentless.mp3">
-        </audio>
+		<audio id="audio-track" preload="auto" loop>
+		   <source src="audio/repentless.mp3">
+		</audio>
 
-        <script src="js/controls.js"></script>
-    </body>
+		<script src="js/controls.js"></script>
+	</body>
 </html>
